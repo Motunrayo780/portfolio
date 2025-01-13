@@ -1,14 +1,12 @@
 import './App.css'
-import Nav from './portfolio1/Nav'
-import Maincon from './portfolio1/Maincon'
-import Footer from './portfolio1/Footer'
+import Navbar from './COMPONENT/Navbar'
+import Main from './COMPONENT/Main'
 function App() {
 
   return (
     <>
-
-    <Nav/>
-<Maincon/>      
+<Navbar/>
+<Main/>
     </>
   )
 }
