@@ -1,6 +1,7 @@
+
+
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,37 +21,6 @@ const Navbar = () => {
             </a>
           </div>
 
-
-  {/* Social Media Icons */}
-  <ul className="hidden md:flex space-x-4 text-xl">
-          <li className="hover:text-gray-300 transition duration-300">
-            <a href="https://github.com" target="_blank" rel="noreferrer">
-              <FaGithub />
-            </a>
-          </li>
-          <li className="hover:text-gray-300 transition duration-300">
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-              <FaLinkedin />
-            </a>
-          </li>
-          <li className="hover:text-gray-300 transition duration-300">
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              <FaTwitter />
-            </a>
-          </li>
-        </ul>
-
-        {/* Mobile Menu Toggle */}
-        <div className="md:hidden">
-          {isOpen ? (
-            <FaTimes className="text-2xl cursor-pointer" onClick={toggleMenu} />
-          ) : (
-            <FaBars className="text-2xl cursor-pointer" onClick={toggleMenu} />
-          )}
-        </div> 
-
-
-
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-6">
             <a href="#about" className="hover:text-gray-400">
@@ -67,11 +37,42 @@ const Navbar = () => {
             </a>
           </div>
 
-        
+          {/* Social Media Icons (Desktop) */}
+          <ul className="hidden md:flex space-x-4 text-xl">
+            <li className="hover:text-gray-300 transition duration-300">
+              <a href="https://Motunrayo780/Motugithub.com" target="_blank" rel="noreferrer">
+                <FaGithub />
+              </a>
+            </li>
+            <li className="hover:text-gray-300 transition duration-300">
+              <a href="https://Motunrayo Bakare/linkedin.com" target="_blank" rel="noreferrer">
+                <FaLinkedin />
+              </a>
+            </li>
+            <li className="hover:text-gray-300 transition duration-300">
+              <a href="https://@Motunjoyweb148827/twitter.com" target="_blank" rel="noreferrer">
+                <FaTwitter />
+              </a>
+            </li>
+          </ul>
+
+          {/* Mobile Menu Toggle */}
+          <div className="md:hidden">
+            {isOpen ? (
+              <FaTimes
+                className="text-2xl cursor-pointer"
+                onClick={toggleMenu}
+              />
+            ) : (
+              <FaBars
+                className="text-2xl cursor-pointer"
+                onClick={toggleMenu}
+              />
+            )}
+          </div>
         </div>
       </div>
 
-    
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden">
@@ -92,13 +93,40 @@ const Navbar = () => {
               href="#skills"
               className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white"
             >
-              skills
+              Skills
             </a>
             <a
               href="#contact"
               className="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white"
             >
               Contact
+            </a>
+          </div>
+          {/* Mobile Social Media Icons */}
+          <div className="px-2 pt-4 pb-3 flex space-x-4 text-xl justify-center">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-gray-300 transition duration-300"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-gray-300 transition duration-300"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-gray-300 transition duration-300"
+            >
+              <FaTwitter />
             </a>
           </div>
         </div>
